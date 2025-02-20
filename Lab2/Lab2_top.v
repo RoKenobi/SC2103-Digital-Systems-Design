@@ -34,11 +34,11 @@ module Lab2_top(
     reg [7:0] reg_d;
     wire [7:0] mem_d;
     Lab2_mem U1 (
-      .a(d_in[5:0]),      // input wire [5 : 0] a
-      .d(reg_d),      // input wire [7 : 0] d
-      .clk(clk),  // input wire clk
-      .we(write_en),    // input wire we
-      .spo(mem_d)  // output wire [7 : 0] spo
+      .a(d_in[5:0]),     
+      .d(reg_d),      
+      .clk(clk),  
+      .we(write_en),    
+      .spo(mem_d)  
     );
     
     always @ (posedge clk)
